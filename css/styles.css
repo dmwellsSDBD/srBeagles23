@@ -1,4 +1,11 @@
 /* CSS Document */
+@import url('https://fonts.googleapis.com/css2?family=Itim&family=Lora:wght@400;700&family=Rubik+Moonrocks&display=swap');
+/* 
+Fonts: 
+font-family: 'Itim', cursive;
+font-family: 'Lora', serif;
+font-family: 'Rubik Moonrocks', cursive;
+*/
 /* CSS Reset */
 * {
     margin: 0;
@@ -8,6 +15,7 @@
 
 body {
     background-color: #e4f2ea;
+    font-family: 'Itim', sans-serif;
 }
 
 header {
@@ -16,6 +24,20 @@ header {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: 30% 30%;
+    font-family: 'Rubik Moonrocks', cursive;
+}
+
+header h1 {
+    margin-left: 35%;
+    color: #734f2f;
+    font-weight: bold;
+    font-size: 7em;
+}
+
+header h3 {
+    margin-left: 45%;
+    color: #11181e;
+    font-size: 3em;
 }
 
 .hnav {
@@ -34,7 +56,7 @@ header {
     display: inline-block;
     list-style: none;
     width: 15%;
-    background-color: red;
+/*    background-color: red;*/
     margin-top: .8%;
 }
 
@@ -42,41 +64,103 @@ header {
     color: #e4f2ea;
     text-decoration: none;
     font-size: 1.5em;
+    padding: 20px 0;
 }
 
-h1 {
-    
+.hnav a:hover {
+    background-color: #A68160;
+    color: #11181e;
+    width: 15%;
+    padding-left: 10%;
+    padding-right: 10%;
 }
 
 main {
+    width: 100%;
     min-height: 500px;
 }
 
 #container{
+    padding: 2% 0;
+    margin: 0 auto;
     width: 80%;
-    
+    min-height: 500px;
+    font-size: 1.8em;
+    color: #734f2f;
+/*    background-color: red;*/
 }
 
-h2 {
-    
+#container img {
+    float: left;
+    padding-right: 2%;
+    margin-bottom: 2%;
+}
+
+#container p {
+    margin-bottom: 1em;
+}
+
+.img2 {
+    width: 65%;
+}
+
+.img3 {
+    width: 45%;
 }
 
 blockquote {
-    
+    font-size: 7em;
+    font-family: 'Rubik Moonrocks', cursive;
 }
 
 table {
-    
+    width: 100%;
+}
+
+td {
+    padding: 10px 0;
+    /*border: 1px solid black;*/
+}
+
+input {
+    height: 3em;
+    width: 20em;
+    border-radius: 25px;
+    padding-left: 25px;
+    padding-right: 25px;
+    font-size: 1.3em;
+    font-weight: bold;
+    background-color:#A68160;
+    color: #E4F2EA;
+    border: 5px double #734F2F;
+}
+
+.frmButton {
+    margin-left: 15%;
+    width: 10em;
+    background-color: #778A8C;
+}
+
+.frmButton:hover {
+    background-color: #734F2F;
+    color: #A68160;
+}
+
+label {
+    padding: 0 25px;
+    font-size: 2em;
+    font-weight: bold;
 }
 
 footer {
+    clear: both;
     min-height: 150px;
     background-color: #a68160;
 }
 
 .fnav {
     display: block;
-    padding-right: 10%;
+    padding: 2% 2% 2% 0;
 }
 
 .fnav ul {
@@ -85,7 +169,6 @@ footer {
 }
 
 .fnav ul li {
-    margin-top: 50px;
     display: inline-block;
     list-style: none;
 /*    background-color: red;*/
@@ -97,5 +180,13 @@ footer {
 .fnav a {
     color: #e4f2ea;
     text-decoration: none;
-    font-size: 1em;
+    font-size: 1.5em;
+}
+
+.fnav a:hover {
+    color: #11181e;
+}
+
+footer h4, footer h5, footer h6 {
+    text-align: center;
 }
